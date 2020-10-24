@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*--- ページ基本デザイン ---*/
+#info_sec1{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+#info_menu{
+	padding: 40px;
+	border: 7px outset skyblue;
+	border-radius: 3em;
+	box-shadow:
+	0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+	0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+	0 19.2px 19.8px rgba(0, 0, 0, 0.092);
+	background-image: url("../img/tea.jpg");
+	background-size: 100%;
+	background-color:rgba(255,255,255,0.8);
+	background-blend-mode:lighten;
+}
+#info_menu_title{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 10px 0 20px 10px;
+}
+#infonew{
+	margin-left: 63px;
+}
+#info_change{
+	padding: 10px 0 20px 10px;
+}
+#info_delete{
+	padding: 10px 0 20px 10px;
+}
+#info_title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 50px 0;
+	border-bottom: 5px dotted skyblue;
+}
+#info_title p{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.popup_info1 {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: darkgray;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.info_contents1{
+    background: skyblue;
+    padding: 50px;
+    width: 90%;
+		height: 90vh;
+		border-radius: 10px;
+}
+.show_new {
+		display: flex;
+    justify-content: center;
+		align-items: center;
+		z-index: 99999;
+}
+#new_info {
+	height: auto;
+	margin: 10px 0;
+}
+#close_info1 {
+	height: auto;
+	margin: 10px 0;
+}
+.popup_info2 {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: darkgray;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.info_contents2{
+    background: skyblue;
+    padding: 50px;
+    width: 90%;
+		height: 90vh;
+		border-radius: 10px;
+}
+.show_change {
+		display: flex;
+    justify-content: center;
+		align-items: center;
+		z-index: 99999;
+}
+#close_info2 {
+		height: auto;
+	margin: 10px 0;
+}
+.popup_info3 {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: darkgray;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.info_contents3{
+    background: skyblue;
+    padding: 50px;
+    width: 90%;
+		height: 90vh;
+		border-radius: 10px;
+}
+.show_delete {
+		display: flex;
+    justify-content: center;
+		align-items: center;
+		z-index: 99999;
+}
+#close_info3 {
+		height: auto;
+	margin: 10px 0;
+}
+#delete_info {
+		height: auto;
+	margin: 10px 0;
+}
+.result {
+	height: auto;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+}
+#change_info {
+		height: auto;
+	margin: 10px 0;
+}
+#button_area {
+	margin: 0 auto;
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+}
+#button_field {
+	margin: 0 auto;
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+}
+.cont {
+	display: flex;
+	justify-content: flex-start;
+}
+.field {
+	height: 90%;
+}

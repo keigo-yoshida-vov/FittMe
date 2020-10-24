@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*--- ページ基本デザイン ---*/
+header {
+	width: 100%;
+	min-width: 1000px;
+	margin: 0 auto;
+	padding: 5px 0 15px 0;
+	background-image: url("../img/ao.jpg");
+	background-size: 100%;
+	background-color:rgba(255,255,255,0.8);
+	background-blend-mode:lighten;
+	border-top: 10px double skyblue;
+	border-bottom: 10px double skyblue;
+	font-family: 'Fredoka One', cursive;
+	font-family: 'Kosugi Maru', sans-serif;
+}
+#header_wrapper {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+#header_main {
+	width: 70%;
+}
+#header_main_area{
+	display: flex;
+	justify-content: flex-start;
+}
+#header_title {
+	font-size: 50px;
+	width: 30%;
+}
+#header_title p{
+	font-family: 'Fredoka One', cursive;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	text-shadow:
+	0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+	0 5px 6.1px rgba(0, 0, 0, 0.076),
+	0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+	0 19.2px 19.8px rgba(0, 0, 0, 0.092);
+}
+#header_subtitle {
+	width: 75%;
+	font-size: 25px;
+	padding: 2% 0 2% 2%	;
+}
+nav ul{
+	display:flex;
+	padding-top: 10px;
+}
+nav ul li {
+	width: 150px;
+	margin: 0 10px;
+	box-shadow:
+	0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+	0 5px 6.1px rgba(0, 0, 0, 0.076);
+}
+nav ul li a{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#header_sub {
+	width: 30%;
+}
+#header_sub_area {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	font-size: 16px;
+}
+#header_status {
+	width: 50%;
+	min-width: 200px;
+}
+#header_status p {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+#header_name {
+	width: 50%;
+	min-width: 100px;
+}
+#header_name p {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+#ticket {
+	font-size: 20px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10%;
+}
+#logout {
+	font-size: 16px;
+	display: flex;
+	justify-content: flex-end;
+	padding: 12% 10% 0 0;
+}
+#logout a{
+	box-shadow:
+	0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+	0 5px 6.1px rgba(0, 0, 0, 0.076);
+}

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*--- ページ基本デザイン ---*/
+#news_sec1{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+#news_menu{
+	padding: 40px;
+	border: 1px solid blue;
+	border-radius: 3em;
+	box-shadow: 3px 3px;
+}
+#news_list {
+	padding: 20px 0 0 60px;
+}
+#news_list p{
+	padding: 10px 0 10px 30px;
+}
+.article {
+	border: 1px solid black;
+	width: 90%;
+	padding: 10px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 1px 1px;
+	border-radius: 1em;
+}
+#next_prev{
+	padding: 30px 0 0 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.popup_article {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: darkgray;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.article_contents{
+    background: skyblue;
+    padding: 50px;
+    width: 50%;
+		height: auto;
+/*		overflow-y:scroll; */
+		border-radius: 10px;
+}
+/* .form_contents::-webkit-scrollbar {
+  width: 7px;
+	border-radius: 10px;
+}
+.form_contents::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 13px;
+}
+.form_contents::-webkit-scrollbar-track {
+  background: rgba(100,100,100, .5);
+	border-radius: 10px;
+} */
+.art_show {
+    display: flex;
+    justify-content: center;
+		align-items: center;
+		z-index: 99999;
+}
+#article_contents p {
+	font-weight: bold;
+}
+#article_menu {
+	display: flex;
+	justify-content: space-between;
+}
+#article_button {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+#close {
+	width: 150px;
+}

@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*--- ページ基本デザイン ---*/
+#reserve_sec1{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	background-color: white;
+}
+#reserve_menu{
+	padding: 40px;
+	border: 7px outset skyblue;
+	border-radius: 3em;
+	box-shadow:
+		0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+		0 5px 6.1px rgba(0, 0, 0, 0.076),
+		0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+		0 19.2px 19.8px rgba(0, 0, 0, 0.092);
+		background-image: url("../img/schedule.jpg");
+		background-color:rgba(255,255,255,0.8);
+		background-blend-mode:lighten;
+}
+
+#reserve_title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 70px 0;
+	border-bottom: 5px dotted skyblue;
+}
+#reserve_title p{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#calender {
+	display: flex;
+	justify-content: space-around;
+}
+#datepicker {
+	font-size: 32.5px;
+	box-shadow: 2px 2px;
+}
+#schedule {
+	width: 35%;
+}
+#schedule p{
+	font-weight: bold;
+}
+#reserve_comment {
+	padding-top: 20px;
+}
+.table{
+	background-color: white;
+}
+tr{
+	height: 50px;
+}
+th:nth-of-type(1), td:nth-of-type(1) {
+	 color: red;
+}
+th:nth-of-type(7), td:nth-of-type(7) {
+	 color: blue;
+}
+/* 日曜日のカラー設定 */
+td.ui-datepicker-week-end:first-child a.ui-state-default{
+  background-color: #ffecec;   /* 背景色を設定 */
+  color: #f00!important;       /* 文字色を設定 */
+}
+/* 土曜日のカラー設定 */
+td.ui-datepicker-week-end:last-child a.ui-state-default{
+  background-color: #eaeaff;   /* 背景色を設定 */
+  color: #00f!important;       /* 文字色を設定 */
+}
+/* ホバー時の動作 */
+td.ui-datepicker-week-end a.ui-state-hover{
+  opacity: 0.8!important;
+}
+/* 当日を示す色はそのまま */
+td.ui-datepicker-week-end a.ui-state-highlight{
+  background-color: #fffa90!important;
+}
+.popup_form {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: darkgray;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.form_contents{
+    background: skyblue;
+    padding: 50px;
+    width: 50%;
+		height: auto;
+		border-radius: 10px;
+}
+.show {
+    display: flex;
+    justify-content: center;
+		align-items: center;
+		z-index: 99999;
+}
+#form_contents p {
+	font-weight: bold;
+}
+#form_button {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+#reserve_button{
+	width: 150px;
+}
+#close {
+	width: 150px;
+}
+#flex {
+	display: flex;
+	justify-content: space-between;
+}
+.reserve_flex {
+	display: flex;
+	padding: 10px 0 20px 20px;
+}
+#timelist{
+	width: 175px;
+}
+#courselist{
+	width: 90px;
+}
+.center{
+display: flex;
+justify-content: center;
+}
+#no {
+	color: black;
+}
