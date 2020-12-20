@@ -10,6 +10,7 @@
   ![localhost_myphp_index php](https://user-images.githubusercontent.com/76395801/102714539-897bdb00-4312-11eb-8506-bf608ab27ed3.png)
 # Requirement
   HTML,CSS,JQuery,PHP,MySQL<br>
+  Slick,Datepicker,Bootstrap<br>
   MAMP,PhpMyadmin,ATOM
 # Target
   ・トレーナー
